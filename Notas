@@ -1,0 +1,45 @@
+                            _GET NEXT LINE:
+Funciones permitidas: "READ" "MALLOC" "FREE";
+Funcion read :
+	prototipo: ssize_t read(int fd, void *buf, size_t count);;
+La funcion read lee x bytes (count) desde el file descriptor (fd) al buffer (buff);
+
+una variable estatica o static variable es una variable que conserva su valor durante toda la ejecucion del programa
+
+este proceto lo dividire en 5 funciones principales
+
+F1 -> get_next_line()
+-> este funcion se encargara a llamar a todas las otras funciones. Se encargara de leer, dividir, sacar la linea y saltar a la siguiente
+
+F2 -> file_reader();
+-> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
