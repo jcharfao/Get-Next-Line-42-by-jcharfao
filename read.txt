@@ -1,0 +1,4 @@
+Hola me llamo jacobo,
+tengo 20 años y soy desarollador de software.
+Mayormente trabajo con c, c++, python, etc...
+Me gusta mucho lo que hago!!

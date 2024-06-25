@@ -6,7 +6,7 @@
 /*   By: jcharfao <jcharfao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:24:19 by jcharfao          #+#    #+#             */
-/*   Updated: 2024/05/18 02:50:12 by jcharfao         ###   ########.fr       */
+/*   Updated: 2024/06/23 17:15:42 by jcharfao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,22 @@ void	*ft_calloc(size_t len, size_t size)
 	return (dest);
 }
 
+char	*ft_strjoin(const char *s1, const char *s2)
+{
+	char	*p;
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 0;
+	p = (char *) malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	if (!p)
+		return (NULL);
+	while (s1[i])
+		p[j++] = s1[i++];
+	i = 0;
+	while (s2[i])
+		p[j++] = s2[i++];
+	p[j] = '\0';
+	return (p);
+}
