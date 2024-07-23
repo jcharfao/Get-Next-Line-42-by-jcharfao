@@ -6,7 +6,7 @@
 /*   By: jcharfao <jcharfao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:24:22 by jcharfao          #+#    #+#             */
-/*   Updated: 2024/06/25 17:33:38 by jcharfao         ###   ########.fr       */
+/*   Updated: 2024/07/23 19:54:45 by jcharfao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,29 @@ char *ft_joinree(char *buf, char *buffer)
 	
 	s = ft_strjoin(buf, buffer);
 	return (s);
+}
+
+char	*ft_next(char *buffer)
+{
+	int		i;
+	int		j;
+	char	*line;
+
+	i = 0;
+	while (buffer[] && buffer[i] != '\n')
+		i++;i
+	if (!buffer[i])
+	{
+		free(buffer);
+		return (NULL);
+	}
+	line = ft_calloc((ft_strlen(buffer) - i + 1), sizeof(char));
+	i++;
+	j = 0;
+	while (buffer[i])
+		line[j++] = buffer[i++];
+	free(buffer);
+	return (line);
 }
 
 char *file_reader(int fd, char *buf)
@@ -61,34 +84,3 @@ char *get_next_line(int fd)
 	
 }
 
-
-
-
-/* char *line_checker(char *line);
-{
-	size_t i;
-	
-	i = -1;
-	while (buf[++i])
-	{
-		if (buf[i] = '\n')
-			return (1);
-	}
-	else
-		return (0);
-}
-
-char *line(buf);
-{
-	int i;
-
-	i = -1;
-	while (buf[i++] != '\n');
-	return ()
-}
-char *line_maker(char *buf)
-{
-	if (line_checker)
-		
-}
- */
