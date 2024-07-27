@@ -6,7 +6,7 @@
 /*   By: jcharfao <jcharfao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:24:19 by jcharfao          #+#    #+#             */
-/*   Updated: 2024/06/23 17:15:42 by jcharfao         ###   ########.fr       */
+/*   Updated: 2024/07/27 04:20:21 by jcharfao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,13 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		p[j++] = s2[i++];
 	p[j] = '\0';
 	return (p);
+}
+
+int	ft_strlen(const char *s)
+{
+	int i;
+
+	i = -1;
+	while(s[i++]);
+	return (i);
 }

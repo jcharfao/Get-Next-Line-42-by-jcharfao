@@ -6,7 +6,7 @@
 /*   By: jcharfao <jcharfao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 22:35:41 by jcharfao          #+#    #+#             */
-/*   Updated: 2024/06/22 07:24:34 by jcharfao         ###   ########.fr       */
+/*   Updated: 2024/07/27 04:20:54 by jcharfao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int main()
 		printf("\n");
 	}
 } */
-void	ft_bzero(void *s, size_t i)
+/* void	ft_bzero(void *s, size_t i)
 {
 	unsigned char	*p;
 
@@ -105,4 +105,4 @@ int main()
 	
 	fd = open("read.txt", O_RDONLY);
 	get_next_line(fd);
-}
+} */
