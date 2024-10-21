@@ -6,7 +6,7 @@
 /*   By: jcharfao <jcharfao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:24:22 by jcharfao          #+#    #+#             */
-/*   Updated: 2024/10/13 02:07:13 by jcharfao         ###   ########.fr       */
+/*   Updated: 2024/10/18 21:58:04 by jcharfao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_next_line(char *buffer)
 		free(buffer);
 		return (NULL);
 	}
-	line = ft_calloc((strlen(buffer) - i + 1), sizeof(char));
+	line = ft_calloc((ft_strlen(buffer) - i + 1), sizeof(char));
 	i++;
 	j = 0;
 	while (buffer[i])
