@@ -6,13 +6,13 @@
 /*   By: jcharfao <jcharfao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:24:22 by jcharfao          #+#    #+#             */
-/*   Updated: 2024/10/18 21:58:04 by jcharfao         ###   ########.fr       */
+/*   Updated: 2024/10/19 06:06:28 by jcharfao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_joinfree(char *buf, char *buffer)
+char	*ft_joinree(char *buf, char *buffer)
 {
 	char	*s;
 
@@ -46,7 +46,7 @@ char	*ft_next_line(char *buffer)
 
 char	*ft_file_reader(int fd, char *buf, int bytes_read)
 {
-	char *buffer;
+	char	*buffer;
 
 	if (!buf)
 		buf = ft_calloc(1, 1);
@@ -60,7 +60,7 @@ char	*ft_file_reader(int fd, char *buf, int bytes_read)
 			return (NULL);
 		}
 		buffer[bytes_read] = 0;
-		buf = ft_joinfree(buf, buffer);
+		buf = ft_joinree(buf, buffer);
 		if (ft_strchr(buffer, '\n'))
 			break ;
 	}
